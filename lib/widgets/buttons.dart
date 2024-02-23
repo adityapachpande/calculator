@@ -8,12 +8,14 @@ class DigitButton extends StatelessWidget {
   const DigitButton({
     required this.label,
     this.textcolor = Colors.white,
-    this.iconData,
-    super.key,
-  });
+    this.icon, // Change iconData to icon
+    Key? key, // Corrected super.key to Key? key
+  }) : super(key: key); // Corrected super.key to super(key: key)
+
   final String label;
   final Color textcolor;
-  final IconData? iconData;
+  final IconData? icon; // Change iconData to icon
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -26,9 +28,9 @@ class DigitButton extends StatelessWidget {
         child: CircleAvatar(
           radius: 36,
           backgroundColor: Colors.black26,
-          child: iconData != null // Check if icon data is provided
+          child: icon != null // Check if icon data is provided
               ? Icon(
-                  iconData,
+                  icon,
                   size: 32,
                   color: textcolor,
                 ) // Display icon if available

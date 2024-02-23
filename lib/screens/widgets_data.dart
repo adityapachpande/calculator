@@ -7,7 +7,8 @@ import '../constant/colors.dart';
 
 List<Widget> buttonList = [
   DigitButton(
-    label: "<=",
+    icon: Icons.backspace_outlined,
+    label: "cut",
     textcolor: AppColors.secondaryColor,
   ),
   DigitButton(

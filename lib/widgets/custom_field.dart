@@ -43,22 +43,3 @@ class Customfield extends StatelessWidget {
     );
   }
 }
-
-
-// Container(
-//             height: 400, // Height of the container
-//             width: MediaQuery.of(context).size.width / 2, // Adjust width as needed
-//             padding: EdgeInsets.all(8.0),
-//             decoration: BoxDecoration(
-//               border: Border.all(), // Border for Container
-//             ),
-//             child: TextField(
-//               style: TextStyle(fontSize: 16), // Font size of text field
-//               maxLines: null, // Allow unlimited lines
-//               decoration: InputDecoration(
-//                 hintText: 'Enter text...',
-//                 border: InputBorder.none, // No border for TextField
-//               ),
-//             ),
-//           ),
-//         ),

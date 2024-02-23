@@ -11,7 +11,7 @@ class CalculatorProvider extends ChangeNotifier {
       case "AC":
         compController.clear();
         break;
-      case "<=":
+      case "cut":
         if (str.isNotEmpty) {
           compController.text = str.substring(0, str.length - 1);
         }
