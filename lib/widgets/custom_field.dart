@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 import '../constant/colors.dart';
 
 class Customfield extends StatelessWidget {
-  const Customfield({
+  Customfield({
     super.key,
     required this.controller,
   });
 
-  final TextEditingController controller;
+  TextEditingController controller = TextEditingController(text: '0');
 
   @override
   Widget build(BuildContext context) {
